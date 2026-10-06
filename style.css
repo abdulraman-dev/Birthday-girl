@@ -1,0 +1,615 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: wheat;
+}
+@media (min-width:768px) {
+  body {
+  margin: 0;
+ background: white;
+}
+}
+
+.playfair-name {
+  font-family: "Playfair", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings: "width" 100;
+}
+
+.great-vibes-regular {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Head styling */
+#logo p {
+  font-size: 2em;
+  font-family: "Great Vibes", cursive;
+  position: relative;
+  top: -10px;
+}
+
+.fa-crown {
+  color: goldenrod;
+  position: relative;
+  top: 20px;
+  left: 60px;
+}
+
+/* the navigation contain */
+#head {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* the main navigation container */
+header {
+  background: #24243e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: -20px;
+  padding-top: -20px;
+}
+
+/* hidden navigation link */
+#home {
+  display: none;
+  margin-left: 90px;
+  color: white;
+  align-items: center;
+  margin-bottom: -10px;
+}
+
+@media (min-width: 700px) {
+  #home {
+    display: flex;
+    margin-left: 90px;
+    color: white;
+    justify-content: space-around;
+    margin-bottom: -10px;
+    
+  }
+}
+
+.navinavi {
+  text-decoration: none;
+  color: white;
+  transition: font-size;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+  transition-delay: 0;
+}
+.navinavi:hover {
+  color: #e33e75;
+  font-size: 1.2em;
+}
+
+/* span section */
+.cover {
+  width: 20px;
+  height: 3px;
+  background: white;
+  border-radius: 10px;
+}
+#cover {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 2px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width:768px) {
+  #cover{
+    display: none;
+  }
+}
+
+/* the hero section */
+#hero {
+  background-image: url(3649e072-ba57-4c25-8376-be51df8c56aa.png);
+  background-size: cover;
+  padding-bottom: em;
+  width: 100%;
+  
+}
+
+@media (min-width: 768px) {
+  #hero {
+    background-image: url(3649e072-ba57-4c25-8376-be51df8c56aa.png);
+    background-size: cover;
+    padding-bottom: em;
+    width: 100%;
+    max-width: 900px;
+    margin-left: 250px;
+    border-radius: 10px;
+  }
+}
+
+/* love symbol image */
+#ch {
+  width: 5%;
+  color: #ff6b9d;
+}
+
+.BIRTHDAY {
+  background-clip: text;
+  color: #e33e75;
+  text-shadow: 1px 1px 3px pink;
+}
+
+#hmm {
+  color: white;
+  animation: bounce 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(2);
+  }
+
+  to {
+    transform: translateY(-5px);
+  }
+}
+
+.fa-arrow-right {
+  margin-top: 3px;
+}
+#hero-sub {
+  padding-left: 2em;
+  background: #8016beae;
+
+  box-shadow: 0 4px 15px #120a24fe;
+  padding: 20px;
+  color: white;
+}
+.surprise-btn {
+  padding: 1em;
+  border: none;
+  border-radius: 20px;
+  background: #ff6b9d;
+  color: white;
+  width: 80%;
+  max-width: 300px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.surprise-btn .fa-arrow-right {
+  animation: move 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(5px);
+  }
+}
+
+.surprise-btn:hover {
+  background: #e33e75;
+}
+
+#hero-sub p {
+  /* line-height: 1.6; */
+  font-family: Playfair, serif;
+  font-family: playfair, sans-serif, monospace;
+}
+
+.happy {
+  font-family: Bonapite, sans-serif, Arial, Helvetica, sans-serif;
+}
+
+#special {
+  display: flex;
+  gap: 10px;
+}
+#special p {
+  margin-top: -2px;
+  font-size: 1.5em;
+}
+.love {
+  display: flex;
+}
+
+.love h3 {
+  font-family: Bonapite, sans-serif, Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+}
+#cha {
+  margin-top: -10px;
+  margin-left: 5px;
+  width: 10px;
+  font-size: 2em;
+}
+
+/* HIDDEN */
+#hidden-card {
+  color: rgb(0, 0, 0);
+  background: white;
+  margin-top: -10px;
+  padding-left: 1em;
+  padding-bottom: 1em;
+  padding-right: 1em;
+  border: none;
+  animation-name: abdul;
+  animation-duration: 1.5s;
+  animation-delay: 0;
+  animation-timing-function: ease-out;
+  display: none;
+  position: relative;
+  top: 15px;
+  text-shadow: 0 0 1px;
+  width: 95%;
+  margin-left: 8px;
+  padding-top: 8px;
+}
+
+@keyframes abdul {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/* special divs */
+
+.sapce {
+  margin-bottom: 10px;
+  display: flex;
+  width: 95%;
+
+  gap: 30px;
+  background: #ffffff;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  text-align: center;
+  align-items: center;
+  box-shadow: 3px 3px 5px;
+}
+
+.topography {
+  margin-top: 10px;
+  color: #a163e2;
+  text-shadow: 1px 0px;
+}
+
+.topography p {
+  margin-top: -10px;
+}
+
+#special-cards {
+  background: wheat;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+/* music styling */
+.photos {
+  background: #eef5ca;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-left: 8px;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-top: 10px;
+  font-size: 1.5em;
+}
+
+.fa-music {
+  color: #8623ff;
+  margin-left: -10px;
+  position: relative;
+  top: -10px;
+  left: -5px;
+}
+
+#playlist-btn {
+  border: none;
+  margin-left: 50px;
+  background: #ff6b9d;
+  width: 100px;
+  border-radius: 50px;
+  cursor: pointer;
+  color: white;
+}
+
+#playlist-btn i {
+  position: relative;
+  left: 5px;
+  top: 0px;
+}
+
+#playlist-btn:hover {
+  background: #e33e75;
+}
+
+#playlist-btn .fa-arrow-right {
+  animation: move 0.5s ease-in-out infinite alternate;
+  color: white;
+}
+
+/* gallery styling */
+#photo {
+  background: #9090fb;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-left: 8px;
+  padding-left: 0.7em;
+  padding-right: 0.5em;
+  margin-top: 10px;
+}
+
+#picture {
+  font-size: 2em;
+  margin-left: -7px;
+  margin-top: -5px;
+  color: blue;
+}
+
+#gallery-btn {
+  border: none;
+  margin-left: 50px;
+  background: #ff6b9d;
+  width: 100px;
+  border-radius: 50px;
+  cursor: pointer;
+  color: white;
+  max-width: 100px;
+}
+
+#gallery-btn i {
+  position: relative;
+  left: 5px;
+  top: 0px;
+}
+
+#gallery-btn:hover {
+  background: #e33e75;
+}
+
+@keyframes move {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(5px);
+  }
+}
+
+#gallery-btn .fa-arrow-right {
+  color: white;
+  animation: move 0.5s ease-in-out infinite alternate;
+}
+
+/* gift styling */
+.gift {
+  background: #f7cee9;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-left: 8px;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-top: 10px;
+}
+
+.fa-gift {
+  color: #ff6b9d;
+  font-size: 2em;
+  margin-left: -7px;
+  margin-top: -7px;
+}
+
+#gift-btn {
+  border: none;
+  margin-left: 50px;
+  background: #ff6b9d;
+  width: 100px;
+  border-radius: 50px;
+  cursor: pointer;
+  color: white;
+}
+
+#gift-btn i {
+  position: relative;
+  left: 5px;
+  top: 0px;
+}
+#gift-btn:hover {
+  background: #e33e75;
+}
+
+#gift-btn .fa-arrow-right {
+  animation: move 0.5s ease-in-out infinite alternate;
+  color: white;
+}
+
+/* hidden Images */
+#image-overall {
+  display: none;
+  background: #ffffff;
+  padding-bottom: 2em;
+  width: 97%;
+  margin: auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 0.5em;
+  box-shadow: 1px 1px 3px;
+  animation: move 1s ease-in-out 2 alternate;
+}
+#images-firstBatch {
+  justify-content: space-around;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+.firstBatch {
+  width: 100%;
+}
+
+/* hidden songs */
+#playlist-overall {
+  display: none;
+  background: #ffffff;
+  padding-bottom: 2em;
+  width: 97%;
+  margin: auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 0.5em;
+  box-shadow: 1px 1px 3px;
+  text-align: center;
+  animation: move 1s ease-in-out 2 alternate;
+}
+
+video {
+  width: 100%;
+}
+audio {
+  width: 100%;
+}
+
+/* hidden surprise */
+#Unlocked {
+  display: flex;
+
+  gap: 30px;
+}
+
+#birthday-surprise {
+  display: none;
+  background: #ffffff;
+  padding-bottom: 2em;
+  width: 97%;
+  margin: auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 0.5em;
+  box-shadow: 1px 1px 3px;
+  text-align: center;
+  animation: move 1s ease-in-out 2 alternate;
+}
+
+#Unlocked .fa-gift {
+  font-size: 1em;
+  position: relative;
+  left: 20px;
+  top: 30px;
+  color: blue;
+}
+
+#voice-message {
+  background: #ff6b9d;
+  padding: 1em;
+  border: none;
+  border-radius: 10px;
+}
+
+#voice-message:hover {
+  background: #e33e75;
+}
+
+/* Hidden voice note */
+
+#voice-note {
+  display: none;
+}
+
+/* Reason section */
+#reasons {
+  background: #1a1a2e;
+  text-align: center;
+  padding-bottom: 5px;
+  color: white;
+  margin-top: -10px;
+  max-width: 600px;
+}
+
+@media (min-width: 768px) {
+  #reasons {
+    background: #1a1a2e;
+    text-align: center;
+    padding-bottom: 5px;
+    color: white;
+    margin-top: -10px;
+    max-width: 700px;
+    margin-left: 384px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+}
+
+.love-you {
+  font-family: Bonapite, cursive;
+  font-size: 3em;
+}
+
+#cards {
+  position: relative;
+  top: -40px;
+  background: #24243e;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+.smile {
+  width: 90%;
+  margin: auto;
+  background: #5d329257;
+  border-radius: 8px;
+  box-shadow: 3px 3px 3px;
+  padding: 0.5em;
+}
+
+.smile .fa-face-smile {
+  color: goldenrod;
+  font-size: 1.5em;
+  position: relative;
+  top: 15px;
+}
+
+.smile .fa-shield-heart {
+  color: goldenrod;
+  font-size: 1.5em;
+  position: relative;
+  top: 15px;
+}
+
+.smile .fa-signal {
+  color: goldenrod;
+  font-size: 1.5em;
+  position: relative;
+  top: 15px;
+}
+
+.bea {
+  color: goldenrod;
+  font-size: 1.5em;
+  position: relative;
+}
